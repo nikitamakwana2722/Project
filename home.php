@@ -5,13 +5,14 @@
 	{
 		header("location:index.php");
 	}
+ // echo $_SESSION['admin_name'];
 ?>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BLUE BUS | Dashboard</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -99,6 +100,7 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <!---
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="./index.html" class="nav-link active">
@@ -106,16 +108,28 @@
                   <p>Dashboard v1</p>
                 </a>
               </li>
+            ---->
+              
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                <a href="../admin/data.php" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                  <p>DataTable</p>
                 </a>
               </li>
+            
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                <a href="../admin/booking.php" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                  <p>Booking</p>
+                </a>
+              </li>
+
+              
+
+              <li class="nav-item">
+                <a href="../admin/logout.php" class="nav-link">
+                <i class="nav-icon fas fa-sign-out"></i>
+                  <p>Logout</p>
                 </a>
               </li>
             </ul>
